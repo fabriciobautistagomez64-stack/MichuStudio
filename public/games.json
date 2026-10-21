@@ -1,0 +1,28 @@
+{
+  "links": {
+    "forum": "https://michuverse-net.onrender.com",
+    "report": "https://michuverse-net.onrender.com"
+  },
+  "sponsors": [],
+  "categories": [
+    { "id": "alpha", "name": "Alpha" }
+  ],
+  "games": [
+    {
+      "id": "michiverse",
+      "name": "Michiverse",
+      "category": "alpha",
+      "versions": [
+        {
+          "name": "Michiverse Alpha 1.0.0",
+          "file": "1.0.0 A.apk",
+          "status": "soon",
+          "date": "",
+          "notes": "Primera version oficial. Mundo procedural, biomas, cuevas y multijugador.",
+          "description": "Aqui va la descripcion larga de la version.",
+          "banner": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Michu Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="#inicio">
+      <svg viewBox="0 0 32 32" width="28" height="28" fill="#00bc7d" aria-hidden="true"><ellipse cx="7" cy="14" rx="3" ry="4"/><ellipse cx="13" cy="8" rx="3" ry="4.2"/><ellipse cx="19" cy="8" rx="3" ry="4.2"/><ellipse cx="25" cy="14" rx="3" ry="4"/><path d="M16 15c-5 0-9 4-9 8 0 3 2 4 5 4 2 0 3-1 4-1s2 1 4 1c3 0 5-1 5-4 0-4-4-8-9-8z"/></svg>
+      <span>Michu Studio</span>
+    </a>
+    <nav>
+      <a href="#descargas">Descargar juegos</a>
+      <a href="#foro">Foro</a>
+      <a href="#reportar">Reportar error</a>
+      <a href="#michiverse">Michiverse</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="view" id="inicio">
+    <h1 class="hero">Michu Studio</h1>
+    <p class="lead">Estudio indie de un solo dev. Hacemos juegos para Android en Godot, empezando con Michiverse.</p>
+    <a class="btn" href="#descargas">Descargar juegos</a>
+    <div class="grid">
+      <a class="card" href="#descargas"><h3>Descargar juegos</h3><p>APKs oficiales por versi&oacute;n.</p></a>
+      <a class="card" href="#foro"><h3>Foro</h3><p>Posts, comentarios y la comunidad.</p></a>
+      <a class="card" href="#reportar"><h3>Reportar error</h3><p>Algo se rompi&oacute;? Av&iacute;sanos.</p></a>
+      <a class="card" href="#michiverse"><h3>Michiverse</h3><p>El juego, c&oacute;mo funciona y qu&eacute; trae.</p></a>
+    </div>
+    <div id="patro" hidden>
+      <h3 class="sub">Patrocinadores</h3>
+      <div class="logos" id="patro-lista"></div>
+    </div>
+  </section>
+
+  <section class="view" id="descargas">
+    <h2>Descargar juegos</h2>
+    <p class="lead">Versiones oficiales. Baja siempre desde aqu&iacute; para no agarrar un APK raro.</p>
+    <div id="lista">Cargando...</div>
+  </section>
+
+  <section class="view" id="foro">
+    <h2>Foro</h2>
+    <p class="lead">Publica, comenta y comparte tus capturas de Michiverse con los dem&aacute;s.</p>
+    <a class="btn" id="btn-foro" href="#">Ir al foro</a>
+  </section>
+
+  <section class="view" id="reportar">
+    <h2>Reportar error</h2>
+    <p class="lead">Cuando reportes, dinos qu&eacute; versi&oacute;n tienes, qu&eacute; estabas haciendo y qu&eacute; celular usas. Si puedes, manda captura.</p>
+    <a class="btn" id="btn-reporte" href="#">Reportar un error</a>
+  </section>
+
+  <section class="view" id="michiverse">
+    <h2>Michiverse</h2>
+    <p class="lead">Un juego de bloques para Android hecho desde cero en Godot 4. Mundos que se generan solos, cuevas, biomas y multijugador.</p>
+
+    <div class="grid two">
+      <div class="card"><h3>Qu&eacute; es</h3><p>Es un juego tipo sandbox donde exploras, picas, construyes y juegas con otros. Lo hago yo solo, por eso cada versi&oacute;n va saliendo poco a poco.</p></div>
+      <div class="card"><h3>Hecho en un celu</h3><p>Todo Michiverse est&aacute; hecho en Godot y programado directo desde un celular. Sin PC de gamer, solo ganas.</p></div>
+      <div class="card"><h3>Que se vea bonito</h3><p>Lo que m&aacute;s me importa es que el juego se vea bien. Por eso le meto shaders, sombras, niebla y texturas con cari&ntilde;o.</p></div>
+      <div class="card"><h3>Qu&eacute; trae ahora</h3><p>Mundos infinitos con seed, monta&ntilde;as, r&iacute;os, cuevas con entradas en la superficie, estructuras, minerales por profundidad, foro y cuentas.</p></div>
+    </div>
+
+    <h3 class="sub">C&oacute;mo est&aacute; optimizado</h3>
+    <div class="grid two">
+      <div class="card"><h3>Chunks por etapas</h3><p>El mundo no se genera de golpe. Primero sale el terreno, luego los detalles, y se prioriza lo que est&aacute; cerca de ti.</p></div>
+      <div class="card"><h3>Hilos aparte</h3><p>La generaci&oacute;n corre en otros hilos con WorkerThreadPool para que el juego no se trabe mientras cargas mundo.</p></div>
+      <div class="card"><h3>Greedy meshing</h3><p>Junta caras de bloques iguales en una sola, y as&iacute; el celular dibuja muchos menos tri&aacute;ngulos.</p></div>
+      <div class="card"><h3>Shaders propios</h3><p>Mipmaps, niebla por distancia y sombras por v&eacute;rtice, pensados para que corra bien en Android.</p></div>
+    </div>
+
+    <p class="note">El lore todav&iacute;a no lo cuento. Eso viene despu&eacute;s.</p>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">Michu Studio. Hecho por MichuProgramacion.</div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
